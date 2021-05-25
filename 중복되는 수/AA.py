@@ -1,5 +1,5 @@
-arr=[1,2,3,3,3,3,4,4]
-# arr=[3,2,4,4,2,5,2,5,5]
+# arr=[1,2,3,3,3,3,4,4]
+arr=[3,2,4,4,2,5,2,5,5]
 # arr=[3,5,7,9,1]
 
 def solution(arr):
@@ -11,9 +11,8 @@ def solution(arr):
                 res[j]+=1
     res=[x for x in res if x!=0 and x!=1]
     if res==[]:
-        print(-1)
-    else:
-        print(res)
+        res=[-1]
+    print(res)
 solution(arr)
 
 '''
