@@ -16,6 +16,22 @@ for idx, x in enumerate(a):
             res=idx+1
 print(avg,res)
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n = int(sys.stdin.readline())
+# lis = list(map(int,sys.stdin.readline().split()))
+# dict1 = dict()
+# res = []
+# for i in range(1,n+1):
+#     dict1[i] = lis[i-1]
+# avg = round(sum(dict1.values())/n)
+# for key, val in dict1.items():
+#     if avg == val:
+#         res.append(key)
+# res = max(res)
+# print(avg,res)
+
 '''
 round()소수 첫째자리 반올림 함수이다.
 enumerate()는 순서가 있는 자료형(list, set, tuple, dictionary, string)의 인덱스와 값을 반환해준다.
