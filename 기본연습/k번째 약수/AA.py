@@ -11,6 +11,12 @@ for i in range(1,n+1):
 else:
     print(-1)
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n, k = map(int,sys.stdin.readline().split())
+# print([x for x in range(1,n+1) if n%x == 0][k-1])
+
 '''
 n,k에 input.txt에 있는 숫자 두개가 들어온다.
 for문으로 변수i를 1부터 n까지 반복한다.
