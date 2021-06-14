@@ -38,6 +38,30 @@ for i in lis:
     tmp = reverse(i)
     if isPrime(tmp):
         print(tmp,end=' ')
+        
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n = int(sys.stdin.readline())
+# lis = list(map(int,sys.stdin.readline().split()))
+
+# def reverse(x):
+#     lis = list(''.join(str(x)))
+#     lis.reverse()
+#     return int(''.join(map(str,lis)))
+
+# def isPrime(x):
+#     if x < 2:
+#         return False
+#     for i in range(2,x):
+#         if x % i == 0:
+#             return False
+#     else:
+#         return True
+    
+# for i in lis:
+#     if isPrime(reverse(i)):
+#         print(reverse(i),end=' ')
 
 '''
 N개의 자연수가 입력되면 각 자연수를 뒤집은 후 그 뒤집은 수가 소수이면 그 수를 출력하는 알고리즘이다.
