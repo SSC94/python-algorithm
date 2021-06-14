@@ -24,9 +24,7 @@ for i in range(len(lis)):
 # for x in range(1,n+1):
 #     for y in range(1,m+1):
 #         dict1[x+y] = dict1.get(x+y,1) + 1
-# for val in dict1.values():
-#     if max_num < val:
-#         max_num = val
+# max_num = max(dict1.values())
 # for key,val in dict1.items():
 #     if max_num == val:
 #         print(key,end=' ')
