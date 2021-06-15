@@ -20,15 +20,26 @@ for i in range(1,n+1):
         right=lis[i][j+1]
         if tmp>up and tmp>down and tmp>left and tmp>right:
             count+=1
-
-# axisX=[-1,1,0,0]
-# axisY=[0,0,-1,1]
-# for i in range(1,n+1):
-#    for j in range(1,n+1):
-#        if all(lis[i][j]>lis[i+axisX[k]][j+axisY[k]] for k in range(4)):
-#            count+=1
-
 print (count)
+
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n = int(sys.stdin.readline())
+# lis = [list(map(int,sys.stdin.readline().split())) for _ in range(n)]
+# lis.insert(0,[0]*n)
+# lis.append([0]*n)
+# dx = [0,0,-1,1]
+# dy = [-1,1,0,0]
+# count = 0
+# for i in lis:
+#     i.insert(0,0)
+#     i.append(0)
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if all(lis[i][j] > lis[i+dx[k]][j+dy[k]] for k in range(4)):
+#             count += 1
+# print(count)
 
 '''
 지도 정보가 N*N 격자판에 주어진다. 각 격자에는 그 지역의 높이가 쓰여져있다.
