@@ -18,6 +18,27 @@ while lis:
             lis.pop()
     count += 1
 print (count)
+
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n, m = map(int,sys.stdin.readline().split())
+# lis = sorted(list(map(int,sys.stdin.readline().split())),reverse=True)
+# lp = count = 0
+# rp = n-1
+# while lp <= rp:
+#     if len(lis) == 1:
+#         count += 1 
+#         break
+#     if lis[lp] + lis[rp] <= m:
+#         lp += 1
+#         rp -= 1
+#     else:
+#         lp += 1
+#     count += 1
+# print(count)
+
+
 '''
 타이타닉이 침몰하고 있다. 안에는 N명의 승객이 타고 있다.
 구명보트를 타고 탈출해야 하는데 타이타닉에 있는 구명보트는
