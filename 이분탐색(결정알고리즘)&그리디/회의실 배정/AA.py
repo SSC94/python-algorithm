@@ -19,6 +19,18 @@ for s, e in meeting:
 
 print(count)
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n = int(sys.stdin.readline())
+# tp_list = sorted([tuple(map(int,sys.stdin.readline().split())) for _ in range(n)],key = lambda x : (x[1],x[0]))
+# count = end = 0
+# for i in tp_list:
+#     if end <= i[0]:
+#         count += 1
+#         end = i[1]
+# print(count)
+
 
 '''
 한 개의 회의실이 있는데 이를 사용하고자 하는 n개의 회의들에 대하여 회의실 사용표를 만들
