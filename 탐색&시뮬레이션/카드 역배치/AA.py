@@ -12,6 +12,18 @@ del lis[0]
 
 for i in lis:
     print(i,end=' ')
+    
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# lis = [x for x in range(21)]
+# def sol(a,b):
+#     lis[a:b+1] = lis[b:a-1:-1]
+# for _ in range(10):
+#     a, b =map(int,sys.stdin.readline().split())
+#     sol(a,b)
+# lis.remove(0)
+# print(lis)
 
 '''
 1부터 20까지 숫자가 하나씩 쓰인 20장의 카드가 오름차순으로 있다.

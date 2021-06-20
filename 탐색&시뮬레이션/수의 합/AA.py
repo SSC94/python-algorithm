@@ -24,6 +24,20 @@ while True:
 
 print(count)
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n, m = map(int,sys.stdin.readline().split())
+# lis = list(map(int,sys.stdin.readline().split()))
+# lp, rp, count = 0, 1, 0
+# while lp < rp+1 and rp < n+1:
+#     if sum(lis[lp:rp]) == m:
+#         count += 1
+#         lp += 1
+#     elif sum(lis[lp:rp]) < m: rp += 1
+#     else: lp += 1
+# print(count)
+
 '''
 N개의 수로 된 수열 A[1],A[2], ..., A[N] 이 있다. 이 수열의 i번째 수부터
 j번째 수까지의 합 A[i]+A[i+1]+...A[j-1]+A[j]가 M이 되는 경우의 수를 구하는 알고리즘

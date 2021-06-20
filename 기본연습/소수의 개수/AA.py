@@ -10,6 +10,19 @@ for i in range(2,n+1):
             ch[j]=1
 print (count)
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n = int(sys.stdin.readline())
+# count = 1
+# for i in range(3,n+1):
+#     for j in range(2,i):
+#         if i % j == 0:
+#             break
+#     else:
+#         count += 1
+# print(count)
+
 '''
 자연수 N이 입력되면 1부터 N까지의 소수의 개수를 출력하는 알고리즘이다.
 리스트 ch는 각 인덱스가 0부터 N까지의 수 범위이다.

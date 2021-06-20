@@ -18,6 +18,22 @@ for i in range(n):
 
 print (sumApple)
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n = int(sys.stdin.readline())
+# lis = [list(map(int,sys.stdin.readline().split())) for _ in range(n)]
+# lp, rp, count = n//2, n//2+1, 0
+# for i in range(n):
+#     count += sum(lis[i][lp:rp])
+#     if i < n//2:
+#         lp -= 1
+#         rp += 1
+#     else:
+#         lp += 1
+#         rp -= 1
+# print(count)    
+
 '''
 사과나무 농장이 있는데 농장은 N*N 격자판(N의 크기는 항상 홀수이다.)으로 이루어져 있으며, 
 각 격자안에는 한 그루의 사과나무가 심어져 있다. 사과를 수확할 때는 격자판이 다이아몬드 모양으로 수확하고,

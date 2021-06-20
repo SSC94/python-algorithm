@@ -16,6 +16,19 @@ for x, y in lis:
         tmp = y
 print(count)
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n = int(sys.stdin.readline())
+# tp_list = sorted([tuple(map(int,sys.stdin.readline().split())) for _ in range(n)],reverse=True)
+# print(tp_list)
+# tmp = count = 0
+# for _, w in tp_list:
+#     if tmp < w:
+#         count += 1
+#         tmp = w
+# print(count)
+
 
 
 '''

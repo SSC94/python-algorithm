@@ -8,6 +8,16 @@ for t in range(T):
     a.sort()
     print("#%d %d" %(t+1,a[k-1]))
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n= int(sys.stdin.readline())
+# for i in range(n):
+#     _,s,e,k = map(int,sys.stdin.readline().split())
+#     lis = list(map(int,sys.stdin.readline().split()))
+#     res = sorted(lis[s-1:e])[k-1]
+#     print('# {0} {1}'.format(i+1,res))
+
 '''
 설명 입력예제 1기준으로 input()은 파일에서 데이터를 읽을 때,
 한줄씩 읽게 된다. 여기서 for문 T로 2가 오고, 다음 n,s,e,k에 6 2 5 3이

@@ -20,6 +20,22 @@ while lp <= rp :
 
 print (res)
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n, m = map(int,sys.stdin.readline().split())
+# lis = [int(sys.stdin.readline()) for _ in range(n)]
+# res = count = 0
+# lt, rt = 1, max(lis)
+# while lt <= rt:
+#     mid = (lt + rt) // 2
+#     count = sum(x // mid for x in lis)
+#     if count >= m:
+#         res = mid 
+#         lt = mid + 1
+#     elif count < m: rt = mid - 1
+# print(res)
+
 '''
 학원에서 각각 길이가 다른 K개의 랜선을 가지고 있다.
 이 랜선들을 모두 N개의 같은 길이의 랜선으로 자르고 싶다.

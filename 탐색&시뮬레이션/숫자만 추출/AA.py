@@ -20,6 +20,18 @@ for i in range(1,res+1):
         count+=1
 print(res,count,sep='\n')
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n = sys.stdin.readline()
+# num_res, divisor = '', 0
+# for i in n:
+#     if i.isdecimal(): num_res += i
+# num_res = int(num_res)
+# for i in range(1,num_res+1):
+#     if num_res % i == 0: divisor += 1
+# print(num_res,divisor,sep='\n')
+
 '''
 문자와 숫자가 섞여있는 문자열이 주어지면 그 중 숫자만 추출하여 그 순서대로 자연수를 만든다.
 그리고 만들어진 자연수와 그 자연수의 약수 개수를 출력한다.

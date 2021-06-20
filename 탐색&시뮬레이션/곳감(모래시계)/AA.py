@@ -33,6 +33,32 @@ for i in range(n):
 
 print(res)
 
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n = int(sys.stdin.readline())
+# lis = [list(map(int,sys.stdin.readline().split())) for _ in range(n)]
+# m = int(sys.stdin.readline())
+# lp = count = 0
+# rp = n
+# for i in range(m):
+#     row, direction, num = map(int,sys.stdin.readline().split())
+#     if direction:
+#         for _ in range(num):
+#             lis[row-1].insert(0,lis[row-1].pop())
+#     else:
+#         for _ in range(num):
+#             lis[row-1].append(lis[row-1].pop(0))
+# for i in range(n):
+#     count += sum(lis[i][lp:rp])
+#     if i < n//2:
+#         lp += 1
+#         rp -= 1
+#     else:
+#         lp -= 1
+#         rp += 1
+# print(count)
+
 '''
 곳감을 만들기 위한 N*N 격자판이 있다. 격자판 각 한개안의 숫자는 말리고 있는 감의 수 이다.
 그런데 특정위치의 감은 잘 마르지 않아 격자의 행을 기준으로 왼쪽, 또는 오른쪽으로 회전시켜 

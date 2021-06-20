@@ -14,6 +14,21 @@ for i in lis:
 for i in range(len(lis)):
     if lis[i]==tmp:
         print(i,end=' ')
+        
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# n, m = map(int,sys.stdin.readline().split())
+# dict1 = dict()
+# max_num = 0
+# for x in range(1,n+1):
+#     for y in range(1,m+1):
+#         dict1[x+y] = dict1.get(x+y,1) + 1
+# max_num = max(dict1.values())
+# for key,val in dict1.items():
+#     if max_num == val:
+#         print(key,end=' ')
+        
 '''
 두 개의 정 n면체와 정 m면체의 두 개의 주사위를 굴려서 나올 수 있는
 합 중 가장 확률이 높은 숫자를 구하고 확률이 같을 경우 오름차순으로 출력하는 알고리즘이다.

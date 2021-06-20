@@ -24,6 +24,18 @@ else:
 for i in res:
     print(i,end=' ')
     
+# 추가 코드
+# import sys
+# sys.stdin = open('input.txt','r')
+# a = int(sys.stdin.readline())
+# list_a = list(map(int,sys.stdin.readline().split()))
+# b = int(sys.stdin.readline())
+# list_b = list(map(int,sys.stdin.readline().split()))
+# res = []
+# for i in list_a: res.append(i)
+# for i in list_b: res.append(i)
+# print(sorted(res))
+    
 '''
 오름차순으로 정렬이 된 두 리스트가 주어지면 두 리스트를 오름차순으로 합쳐 출력하는 알고리즘이다.
 예시로 첫 번째 리스트의 크기가 3이고, 그 리스트의 원소가 1 3 5로 주어졌다.
