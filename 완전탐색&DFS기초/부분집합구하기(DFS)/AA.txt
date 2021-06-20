@@ -1,0 +1,27 @@
+import sys
+sys.stdin=open("input.txt", "r")
+def DFS(v):
+    if v==n+1:
+        for i in range(1, n+1):
+            if ch[i]==1:
+                print(i, end=' ')
+        print()
+    else:
+        ch[v]=1
+        DFS(v+1)
+        ch[v]=0
+        DFS(v+1)
+
+if __name__=="__main__":
+    n=int(input())
+    ch=[0]*(n+1)
+    DFS(1)
+
+'''
+부분집합의 개수를 구하는데 공집합을 제외하면
+1~N의 각 요소를 부분집합에 포함이나 포함X 
+두 가지 경우로 계산해서 각 x2씩 즉2^n으로 총 개수가 나온다.
+ex) n=3의 경우 1,2,3에서 각 x2씩 하면 2x2x2로 8이고,
+공집합을 빼면 총 7가지이다.
+'''
+

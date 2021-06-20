@@ -1,0 +1,26 @@
+import sys
+sys.stdin=open("input.txt", "r")
+def DFS(L, subTotal):
+    global switch
+    if switch: return
+    if L == n:
+        if subTotal == (total_sum - subTotal):
+            print("Yes")
+            switch = 1
+    else:
+        DFS(L+1, subTotal + num_lst[L])
+        DFS(L+1, subTotal)
+
+if __name__ == '__main__':
+    switch = 0
+    n = int(input()) 
+    num_lst = list(map(int, input().split()))
+    total_sum = sum(num_lst)
+    DFS(0, 0)
+    if switch == 0: print("NO")
+
+'''
+N개의 원소로 구성된 자연수 집합을 두 개의 부분집합으로 
+나누었을 때 두 부분집합의 합이 같은 경우가 존재하면
+YES를 출력하고, 아니면 NO를 출력한다.
+'''
