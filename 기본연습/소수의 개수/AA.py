@@ -23,6 +23,15 @@ print (count)
 #         count += 1
 # print(count)
 
+# for i in range(2,int(n**0.5)+1):
+#     if ch[i]:
+#         for j in range(i+i,n+1,i):
+#             ch[j]=0
+# count = sum(ch)-2
+# for i in range(2,101):
+#     if ch[i]:
+#         print(i)
+
 '''
 자연수 N이 입력되면 1부터 N까지의 소수의 개수를 출력하는 알고리즘이다.
 리스트 ch는 각 인덱스가 0부터 N까지의 수 범위이다.
